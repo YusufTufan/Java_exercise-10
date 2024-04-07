@@ -1,22 +1,33 @@
-# e_number
-Bu program, kullanıcının belirlediği bir sayıya kadar olan e (Euler sayısı) değerini hesaplar.
+# Calculate e Number
+Bu Java programı, kullanıcının girdiği bir sayıya göre e sayısının değerini hesaplar. Euler sayısı olarak da bilinen e sayısı, sonsuz bir dizi olan ve matematikte önemli bir sabit olan bir reel sayıdır.
 
-## Kullanım Talimatları
+## Kullanım
+Programı çalıştırmak için bir Java IDE'si kullanarak veya terminalde aşağıdaki adımları takip ederek çalıştırabilirsiniz:
 
-Programı çalıştırdıktan sonra, kullanıcıya "Hesaplanacak sayıyı giriniz:" şeklinde bir girdi istenecektir.
-Kullanıcı bu girdiye bir tamsayı değeri girmelidir.
-Program, girilen sayıya kadar olan e değerini hesaplayacak ve ekrana sonucu yazdıracaktır.
+1. Java derleyicisi ile `e_number.java` dosyasını derleyin:  
+   ```
+   javac e_number.java
+   ```
 
-## Örnek
+2. Oluşturulan `.class` dosyasını çalıştırın:  
+   ```
+   java e_number
+   ```
+
+3. Program, bir sayı girmenizi isteyecek. Bir sayı girin ve program, bu sayıya göre e sayısının değerini hesaplayacaktır.
+
+## E Sayısı Hesaplama
+Program, kullanıcının girdiği sayıya göre e sayısını hesaplamak için aşağıdaki formülü kullanır:
+
 ```
-Hesaplanacak sayıyı giriniz: 5
-E değeri: 2.708333333333333
+e = 1 + 1/1! + 1/2! + 1/3! + ... + 1/n!
 ```
 
-Bu örnekte, kullanıcı 5'i girdiğinde, program 5'e kadar olan e değerini hesapladı ve sonucu ekrana yazdırdı.
+Burada `n` kullanıcının girdiği sayıdır ve `n!` faktöriyel işlemini temsil eder.
 
 ## Notlar
-- Program, faktöriyel hesaplama işlemi için iç içe döngüler kullanır.
-- Programın hesapladığı e değeri daha fazla iterasyonla daha doğru hale gelebilir.
-- Programın yürütülmesi biraz zaman alabilir, özellikle büyük sayılar için.
-```
+- Program, kullanıcıdan girdi almak için `Scanner` sınıfını kullanır.
+- Program, kullanıcının girdiği sayıya kadar olan faktöriyelleri hesaplayarak e sayısını hesaplar.
+- Program, hesaplanan e sayısını ekrana yazdırır.
+
+Bu README dosyası, programın nasıl çalıştırılacağını, e sayısının nasıl hesaplandığını, programın kullanımını ve diğer bazı bilgileri açıklar. Ayrıca, katkıları nasıl yapabileceğiniz hakkında bilgi verir ve projenin lisansını belirtir.
